@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Asistencia</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            padding: 24px;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+        }
+        h1 {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 1.7rem;
+        }
+        form p {
+            margin-bottom: 14px;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            transform: scale(1.2);
+            margin-right: 8px;
+        }
+        .checkbox-field {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        button {
+            background: #0f766e;
+            color: #ffffff;
+            border: 0;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .errors {
+            color: #b91c1c;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Asistencia</h1>
+
+        {% if form.errors %}
+            <div class="errors">
+                Revisa los campos marcados y vuelve a intentar.
+            </div>
+        {% endif %}
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Guardar asistencia</button>
+        </form>
+    </div>
+</body>
+</html>
