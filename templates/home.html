@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Taller 2 Django</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 32px;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        h1 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-top: 0;
+            color: #334155;
+        }
+        .links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+        a {
+            text-decoration: none;
+            background: #0f766e;
+            color: #ffffff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        .secondary {
+            background: #334155;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Taller 2 Django</h1>
+        <p>Pagina de inicio minima del proyecto.</p>
+
+        <div class="links">
+            <a href="/asistencia/">Ir a Asistencia</a>
+            <a href="/solicitudes/formulario/">Ir a Solicitudes</a>
+            <a class="secondary" href="/admin/">Ir a Admin</a>
+        </div>
+    </main>
+</body>
+</html>
