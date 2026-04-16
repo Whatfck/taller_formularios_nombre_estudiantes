@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "solicitudes",
+    "taller_formularios_nombre_estudiantes.solicitudes",
 ]
 
 MIDDLEWARE = [
