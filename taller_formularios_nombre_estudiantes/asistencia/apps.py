@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class AsistenciaConfig(AppConfig):
-    name = "asistencia"
+    name = "taller_formularios_nombre_estudiantes.asistencia"
